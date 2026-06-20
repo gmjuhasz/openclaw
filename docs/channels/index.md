@@ -35,6 +35,7 @@ Text is supported everywhere; media and reactions vary by channel.
 - [LINE](/channels/line) - LINE Messaging API bot (downloadable plugin).
 - [Matrix](/channels/matrix) - Matrix protocol (downloadable plugin).
 - [Mattermost](/channels/mattermost) - Bot API + WebSocket; channels, groups, DMs (downloadable plugin).
+- [Messenger](/channels/messenger) - Facebook Messenger via Meta Graph API webhook (bundled plugin).
 - [Microsoft Teams](/channels/msteams) - Bot Framework; enterprise support (bundled plugin).
 - [Nextcloud Talk](/channels/nextcloud-talk) - Self-hosted chat via Nextcloud Talk (bundled plugin).
 - [Nostr](/channels/nostr) - Decentralized DMs via NIP-04 (bundled plugin).

@@ -42,6 +42,7 @@ const packageManifestContractTests: PackageManifestContractParams[] = [
     minHostVersionBaseline: "2026.3.22",
   },
   { pluginId: "mattermost", minHostVersionBaseline: "2026.3.22" },
+  { pluginId: "messenger", minHostVersionBaseline: "2026.3.22" },
   {
     pluginId: "memory-lancedb",
     pluginLocalRuntimeDeps: ["@lancedb/lancedb", "apache-arrow"],

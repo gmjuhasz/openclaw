@@ -1,0 +1,21 @@
+{
+  "id": "messenger",
+  "name": "Messenger",
+  "description": "OpenClaw Facebook Messenger channel plugin via the Meta Graph API.",
+  "activation": {
+    "onStartup": false
+  },
+  "channels": ["messenger"],
+  "channelEnvVars": {
+    "messenger": [
+      "MESSENGER_PAGE_ACCESS_TOKEN",
+      "MESSENGER_APP_SECRET",
+      "MESSENGER_VERIFY_TOKEN"
+    ]
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}
