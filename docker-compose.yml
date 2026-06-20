@@ -1,7 +1,13 @@
 services:
   openclaw-gateway:
     image: ${OPENCLAW_IMAGE:-openclaw:local}
-    build: .
+    build:
+      context: .
+      args:
+        # Opt-in plugin runtime deps to bundle into the image. Codex ships its
+        # runtime deps (@openai/codex) opt-in, so list it here or the
+        # gpt-5.5-codex harness fails to register at runtime.
+        OPENCLAW_EXTENSIONS: ${OPENCLAW_EXTENSIONS:-codex}
     env_file:
       - path: .env
         required: false
